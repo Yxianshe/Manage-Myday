@@ -6,6 +6,11 @@ Manage MyDay 是一个基于 PyQt6 开发的现代化桌面日程管理应用。
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8+-yellow.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+<img width="1195" height="818" alt="image" src="https://github.com/user-attachments/assets/b7819dc8-928c-4358-9b2d-993f80b44fef" />
+<img width="304" height="467" alt="image" src="https://github.com/user-attachments/assets/c6521248-691e-4bac-9e01-5ad790f2f9b4" />
+
+
+
 
 ## ✨ 主要功能
 
