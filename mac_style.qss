@@ -1,0 +1,194 @@
+/* * Mac Dark Mode Style QSS (v7.3 - Fix MenuBar & ScrollBar) */
+
+/* --- Global --- */
+QWidget {
+    font-family: "Microsoft YaHei UI", "PingFang SC", "Segoe UI", sans-serif;
+    font-size: 15px;
+    color: #F0F0F0;
+    background-color: transparent;
+    outline: none;
+}
+
+QMainWindow {
+    background-color: #1E1E1E;
+}
+
+/* --- Menu Bar --- */
+QMenuBar {
+    background-color: #2C2C2E;
+    color: white;
+    border-bottom: 1px solid #3A3A3C;
+}
+QMenuBar::item {
+    background-color: transparent;
+    padding: 8px 12px;
+}
+QMenuBar::item:selected {
+    background-color: #3A3A3C;
+    border-radius: 4px;
+}
+
+/* --- Menu Dropdown --- */
+QMenu {
+    background-color: #2C2C2E;
+    border: 1px solid #48484A;
+    border-radius: 8px;
+    padding: 5px 0px;
+}
+QMenu::item {
+    padding: 6px 24px;
+    color: white;
+}
+QMenu::item:selected {
+    background-color: #0A84FF;
+}
+QMenu::separator {
+    height: 1px;
+    background: #48484A;
+    margin: 5px 10px;
+}
+
+/* --- ScrollBar --- */
+QScrollBar:vertical {
+    border: none;
+    background: #FFFFFF; /* White background */
+    width: 14px; /* Wider */
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #D0D0D0; /* Light gray */
+    min-height: 20px;
+    border-radius: 7px;
+    margin: 2px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #B0B0B0;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* --- Sidebar --- */
+QWidget#Sidebar {
+    background-color: #262626;
+    border-right: 1px solid #333333;
+}
+
+/* --- Calendar --- */
+QCalendarWidget {
+    background-color: #1E1E1E;
+}
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #1E1E1E;
+}
+QCalendarWidget QTableView {
+    background-color: #1E1E1E;
+    alternate-background-color: #1E1E1E;
+    selection-background-color: transparent;
+    gridline-color: transparent;
+    outline: none;
+}
+
+/* --- Right Panel --- */
+QWidget#RightPanel {
+    background-color: #262626;
+    border-left: 1px solid #333333;
+}
+
+/* --- Inputs & ComboBoxes --- */
+QLineEdit, QComboBox, QTextEdit {
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: white;
+    font-size: 14px;
+}
+
+QLineEdit:focus, QComboBox:focus, QTextEdit:focus {
+    border: 1px solid #0A84FF;
+    background-color: #3A3A3A;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555555;
+    selection-background-color: #0A84FF;
+    selection-color: white;
+    outline: none;
+}
+
+/* --- Buttons --- */
+QPushButton {
+    background-color: #3A3A3A;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    padding: 6px 14px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+QPushButton:hover {
+    background-color: #484848;
+}
+
+QPushButton#PrimaryButton {
+    background-color: #0A84FF;
+    border: none;
+    font-weight: 600;
+}
+QPushButton#PrimaryButton:hover {
+    background-color: #0077ED;
+}
+
+QPushButton#IconButton {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #CCCCCC;
+}
+QPushButton#IconButton:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Checkbox --- */
+QCheckBox {
+    spacing: 8px;
+    color: #DDDDDD;
+    font-size: 14px;
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #777777;
+    background: #333333;
+}
+QCheckBox::indicator:checked {
+    background-color: #0A84FF;
+    border-color: #0A84FF;
+    image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+
+/* --- List --- */
+QListWidget#TaskArea::item {
+    margin-bottom: 10px;
+}
+QListWidget#TaskArea::item:selected {
+    background-color: transparent;
+}
+
+/* Titles */
+QLabel#HeaderTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+QLabel#SectionTitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #999999;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
